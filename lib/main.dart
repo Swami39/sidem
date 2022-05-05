@@ -6,7 +6,8 @@ import 'flutter_flow/flutter_flow_theme.dart';
 import 'flutter_flow/flutter_flow_util.dart';
 import 'flutter_flow/internationalization.dart';
 import 'index.dart';
-
+import 'package:fl_chart/fl_chart.dart';
+import 'flchartwidget.dart';
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
   await Firebase.initializeApp();
@@ -14,7 +15,6 @@ void main() async {
 
   runApp(MyApp());
 }
-
 class MyApp extends StatefulWidget {
   // This widget is the root of your application.
   @override

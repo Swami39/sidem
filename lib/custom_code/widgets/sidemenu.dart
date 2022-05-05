@@ -1,12 +1,17 @@
 // Automatic FlutterFlow imports
+import 'package:sidemenu/candlesticks.dart';
+
 import '../../backend/backend.dart';
 import '../../flutter_flow/flutter_flow_theme.dart';
 import '../../flutter_flow/flutter_flow_util.dart';
 import 'index.dart'; // Imports other custom widgets
 import 'package:flutter/material.dart';
+import 'package:sidemenu/flchartwidget.dart';
 // Begin custom widget code
 import 'package:flutter/material.dart';
 import 'package:easy_sidemenu/easy_sidemenu.dart';
+import 'package:flutter_radar_chart/flutter_radar_chart.dart';
+import 'package:sidemenu/radarchartwidget.dart';
 
 class Sidemenu extends StatefulWidget {
   const Sidemenu({
@@ -87,37 +92,28 @@ class _SidemenuState extends State<Sidemenu> {
                 Container(
                   color: Colors.white,
                   child: Center(
-                    child: Text(
-                      'Dashboard',
-                      style: TextStyle(fontSize: 35),
-                    ),
+                    child:FLBarChartWidget(),
+
+                  ),
+                ),
+
+                Container(
+                  color: Colors.white,
+                  child: Center(
+                    child: FLBarChartWidget(),
+
                   ),
                 ),
                 Container(
                   color: Colors.white,
                   child: Center(
-                    child: Text(
-                      'Users',
-                      style: TextStyle(fontSize: 35),
-                    ),
+                    child: RadarChartWidget(),
                   ),
                 ),
                 Container(
                   color: Colors.white,
                   child: Center(
-                    child: Text(
-                      'Files',
-                      style: TextStyle(fontSize: 35),
-                    ),
-                  ),
-                ),
-                Container(
-                  color: Colors.white,
-                  child: Center(
-                    child: Text(
-                      'Download',
-                      style: TextStyle(fontSize: 35),
-                    ),
+                    child: candelstickwidget(),
                   ),
                 ),
                 Container(
